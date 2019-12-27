@@ -1,0 +1,12 @@
+ID: Pokemon
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: pokemon
+   type: nodejs
+   path: pokemon
+   provides:
+    - name: pokemon_api
+      properties:
+         url: ${default-url}
